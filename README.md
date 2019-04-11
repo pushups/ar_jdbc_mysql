@@ -1,24 +1,8 @@
-# README
+    Example repo demonstrating failing to read timestamps correctly
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+    This repo contains a basic example where the activerecord-jdbcmysql-adapter fails
+    to read the timezone correctly.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    Steps to reproduce:
+    1. RAILS_ENV=test bundle exec rake db:create db:migrate
+    2. bundle exec rake test
